@@ -29,14 +29,22 @@
             padding: 24px 0 29px 37px;
         }
 
+        .header {
+            background-color: #F3EFE5;
+        }
+
         .first-block {
             background: radial-gradient(circle at center, #F3EFE5 0%, #9C9982 70%);
+            padding: 15px;
+            display: block;
         }
 
         .first-block p {
             font-size: 20px;
             padding: 41px 0 53px 37px;
             font-style: italic;
+            max-width: 285px;
+
         }
 
         .first-block-img img {
@@ -82,12 +90,13 @@
 
         .third-block p {
             font-size: 20px;
-            padding: 46px 0 46px 37px;
+            padding: 46px 0 0 37px;
             color: white;
         }
+
         .third-block img {
-              width: 300px;
-            }
+            width: 300px;
+        }
 
         .third-block button {
             margin: 31px;
@@ -97,12 +106,15 @@
             padding: 10px 19px;
             background-color: white;
             border: none;
+            margin-top: 10px;
+
         }
 
         .third-block button:hover {
             color: white;
             background-color: #EC8E3C;
         }
+
         .third-block button a {
             color: inherit;
             text-decoration: inherit;
@@ -187,10 +199,14 @@
 
 <body>
 
-    <table>
+    <table class="header">
         <tr>
             <td>
                 <h1>¡Hola, consultora/or!</h1>
+            </td>
+            <td>
+                <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/b31cd805bc124429e346760ab17eeece4d62dd7e/img/Grupo%202.svg"
+                    alt="">
             </td>
         </tr>
     </table>
@@ -208,11 +224,12 @@
 
     <table class="second-block">
         <tr>
-            <td style="width: 33.33%;">
+            <td >
                 <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/main/img/img_2.png" alt="">
             </td>
-            <td style="width: 66.67%;">
-                <p>La potencia de la Amazonía en un concentrado con un 81% menos de plástico que el de recarga tradicional. <br><br>
+            <td >
+                <p>La potencia de la Amazonía en un concentrado con un 81% menos de plástico que el de recarga
+                    tradicional. <br><br>
                     Conoce todos sus beneficios:</p>
                 <button><a href="https://minegocio.natura.cl/">Entra a Mi Negocio</a></button>
             </td>
@@ -223,7 +240,8 @@
         <tr>
             <td style="width: 66.67%;">
                 <p>Suma al consumo consciente con Tukumá, con el poder de regenerar ecosistemas y nuestra piel.</p>
-                <button><a href="https://drive.google.com/file/d/1LXkqeQA0q8BQFSGr3P8AOP_WNlAAqzXO/view">Entra al folleto Tukumá</a></button>
+                <button><a href="https://drive.google.com/file/d/1LXkqeQA0q8BQFSGr3P8AOP_WNlAAqzXO/view">Entra al
+                        folleto Tukumá</a></button>
             </td>
             <td style="width: 33.33%;">
                 <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/main/img/img_3.png" alt="">
@@ -234,7 +252,10 @@
     <table class="footer">
         <tr>
             <td>
-                <p>2024 Natura. Todos los derechos reservados.  NATURA COSMETICOS S.A., con domicilio en Av. Apoquindo 5950, piso 7, Las Condes, Región Metropolitana.  Con teléfono 22731832 o 800115566. Rol Único Tributario N° 96.575.280-3. <br> Habla con nosotros en: <a href="https://www.natura.cl/" class="natura-link">www.natura.cl</a></p>
+                <p>2024 Natura. Todos los derechos reservados. NATURA COSMETICOS S.A., con domicilio en Av. Apoquindo
+                    5950, piso 7, Las Condes, Región Metropolitana. Con teléfono 22731832 o 800115566. Rol Único
+                    Tributario N° 96.575.280-3. <br> Habla con nosotros en: <a href="https://www.natura.cl/"
+                        class="natura-link">www.natura.cl</a></p>
             </td>
         </tr>
     </table>
