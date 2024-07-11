@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +15,10 @@
             border-collapse: collapse;
             border-spacing: 0;
             margin: 0 auto;
+            width: 100%;
         }
 
         td {
-
             padding: 0;
             margin: 0;
             border: none;
@@ -31,36 +32,50 @@
         }
 
         tr.first-block {
-            position: relative;
             background: radial-gradient(circle at center, #F3EFE5 0%, #9C9982 70%);
-
         }
 
-        td.first-block-img {
+        td.first-block-text,
+        td.third-block-text {
+            width: 66.67%; /* 2/3 del ancho */
+            padding: 20px; /* Ajusta el padding según sea necesario */
+        }
+
+        td.first-block-img,
+        td.third-block-img {
+            width: 33.33%; /* 1/3 del ancho */
             text-align: right;
-            z-index: 5;
         }
 
         tr.first-block p {
             font-size: 35px;
             padding: 41px 0 53px 37px;
-            /* width: 113%; */
             font-style: italic;
-            z-index: 5;
         }
 
         td.first-block-img img {
             padding-right: 21px;
+            max-width: 100%; /* Asegura que la imagen no se desborde */
+            height: auto;
         }
+
         .second-block {
             background-color: #1D3F29;
-
         }
+
+        td.second-block-img {
+            width: 33.33%;
+            text-align: left;
+            padding: 20px;
+        }
+
         td.second-block-snd-td {
             background-color: #1D3F29;
             color: white;
             font-size: 25px;
-
+            width: 66.67%;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         td.second-block-snd-td p {
@@ -70,19 +85,20 @@
         }
 
         td.second-block-snd-td button {
+            display: block;
             margin-left: 31px;
+            margin-top: 20px;
             font-size: 25px;
             color: #1D3F29;
             font-weight: bold;
             padding: 10px 19px;
             border: none;
-
+            background-color: white;
         }
 
         td.second-block-snd-td button a {
             color: inherit;
             text-decoration: inherit;
-
         }
 
         td.second-block-snd-td button:hover {
@@ -100,9 +116,6 @@
             font-size: 35px;
             padding: 46px 0 46px 37px;
             color: white;
-            /* width: 112%; */
-            position: relative;
-            z-index: 10;
             margin: 0;
         }
 
@@ -113,9 +126,6 @@
             font-weight: bold;
             padding: 10px 19px;
             border: none;
-            /* width: 103%; */
-            z-index: 5;
-            position: relative;
             margin-bottom: 70px;
         }
 
@@ -127,11 +137,12 @@
         tr.third-block td button a {
             color: inherit;
             text-decoration: inherit;
-
         }
 
         tr.third-block td img {
             margin: 27px 0 17px 0;
+            max-width: 100%; /* Asegura que la imagen no se desborde */
+            height: auto;
         }
 
         tr.footer {
@@ -158,12 +169,6 @@
         tr.footer td p a.natura-link {
             color: #B74700;
         }
-
-        /* img.img-deco {
-            position: absolute;
-            left: 0;
-            z-index: -1;
-        } */
     </style>
 </head>
 
@@ -176,18 +181,15 @@
             </td>
         </tr>
         <tr class="first-block">
-            <td>
+            <td class="first-block-text">
                 <p>Este mail pesa menos porque lleva Natura Ekos, el Hidratante Corporal Concentrado de Castaña.</p>
             </td>
             <td class="first-block-img">
                 <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/main/img/img_1.png" alt="">
-                <!-- <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/4d4ee4ce4162ae62e14f9395b5f0722146b49161/img/Rect%C3%A1ngulo%201.svg"
-                    alt="" class="img-deco"> -->
             </td>
-
         </tr>
         <tr class="second-block">
-            <td>
+            <td class="second-block-img">
                 <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/main/img/img_2.png" alt="">
             </td>
             <td class="second-block-snd-td">
@@ -196,23 +198,20 @@
                     Conoce todos sus beneficios:</p>
                 <button> <a href="https://minegocio.natura.cl/"> Entra a Mi Negocio</a></button>
             </td>
-
         </tr>
         <tr class="third-block">
-            <td colspan="1">
+            <td class="third-block-text">
                 <p>Suma al consumo consciente con <br> Tukumá, con <br> el poder de regenerar ecosistemas y nuestra
                     piel.</p>
                 <button><a href=" https://drive.google.com/file/d/1LXkqeQA0q8BQFSGr3P8AOP_WNlAAqzXO/view">Entra al
                         folleto Tukumá</a></button>
-
             </td>
-            <td>
+            <td class="third-block-img">
                 <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/main/img/img_3.png" alt="">
             </td>
-
         </tr>
         <tr class="footer">
-            <td colspan="3">
+            <td colspan="2">
                 <p>2024 Natura. Todos los derechos reservados. <br> NATURA COSMETICOS S.A., con domicilio en Av.
                     Apoquindo
                     5950, piso 7, Las Condes, Región Metropolitana. <br> Con teléfono 22731832 o 800115566. Rol Único
@@ -222,8 +221,6 @@
                     las 24 horas del día los 7 días de la semana. <br> Si quieres cancelar tu suscripción haz <a href=""
                         class="click-here">click aquí</a></p>
             </td>
-
-
         </tr>
     </table>
 
