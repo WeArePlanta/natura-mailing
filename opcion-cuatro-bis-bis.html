@@ -55,7 +55,7 @@
         }
 
         .first-block-img img {
-            /* width: 100%; */
+            width: 100%;
             height: auto;
         }
 
@@ -63,26 +63,32 @@
             background-color: #1D3F29;
         }
 
-        .second-block img {
-            display: block;
-        }
-
         .second-block p {
-            padding: 31px;
+            padding-left: 31px;
+            padding-right: 32px;
             font-weight: 300;
+            margin: 0;
             color: white;
             font-size: 20px;
         }
 
+        .second-block img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+
         .second-block button {
             display: block;
-            margin: 20px 31px;
+            margin-left: 31px;
+            margin-top: 20px;
             font-size: 20px;
             color: #1D3F29;
             font-weight: bold;
             padding: 10px 19px;
-            background-color: white;
             border: none;
+            background-color: white;
         }
 
         .second-block button a {
@@ -92,7 +98,9 @@
 
         .second-block button:hover {
             color: #FFFFFF;
+            cursor: pointer;
             background-color: #81A005;
+            border: none;
         }
 
         .third-block {
@@ -153,7 +161,58 @@
             color: #B74700;
         }
 
-    
+        /* @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 18px;
+                padding: 20px;
+            }
+
+            .first-block p {
+                font-size: 18px;
+                padding: 20px;
+            }
+
+            .second-block p {
+                font-size: 16px;
+                padding: 20px;
+            }
+
+            .second-block button {
+                font-size: 16px;
+                padding: 10px 15px;
+                margin: 20px;
+            }
+
+            .third-block p {
+                font-size: 18px;
+                padding: 20px;
+            }
+
+          
+
+            .third-block button {
+                font-size: 16px;
+                padding: 10px 15px;
+                margin: 20px;
+            }
+
+            .footer p {
+                font-size: 8px;
+                padding: 20px;
+            }
+
+            .first-block,
+            .second-block,
+            .third-block {
+                width: 100% !important;
+            }
+
+            .first-block td,
+            .second-block td,
+            .third-block td {
+                width: 100% !important;
+            }
+        } */
     </style>
 </head>
 
@@ -162,7 +221,7 @@
     <table class="header">
         <tr>
             <td style="width: 100%;">
-                <h1>¡Hola consultor/a!</h1>
+                <h1>¡Hola, consultora/or!</h1>
             </td>
             <td style="width: 100%;">
                 <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/main/img/Grupo%202.png" alt="">
@@ -183,12 +242,11 @@
 
     <table class="second-block">
         <tr>
-            <td>
+            <td style="width: 33.33%;">
                 <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/main/img/img_2.png" alt="">
             </td>
-            <td>
-                <p>La potencia de la Amazonía en un concentrado con un 81% menos de plástico que el de recarga
-                    tradicional. <br><br>
+            <td style="width: 66.67%;">
+                <p>La potencia de la Amazonía en un concentrado con un 81% menos de plástico que el de recarga tradicional. <br><br>
                     Conoce todos sus beneficios:</p>
                 <button><a href="https://minegocio.natura.cl/">Entra a Mi Negocio</a></button>
             </td>
@@ -198,8 +256,9 @@
     <table class="third-block">
         <tr>
             <td style="width: 66.67%;">
-                <p>Súmate al consumo consciente con Tukumá, con el poder de regenerar ecosistemas y nuestra piel.</p>
-                <button><a href="https://drive.google.com/file/d/1LXkqeQA0q8BQFSGr3P8AOP_WNlAAqzXO/view">Conoce más de Ekos</a></button>
+                <p>Suma al consumo consciente con Tukumá, con el poder de regenerar ecosistemas y nuestra piel.</p>
+                <button><a href="https://drive.google.com/file/d/1LXkqeQA0q8BQFSGr3P8AOP_WNlAAqzXO/view">Entra al
+                        folleto Tukumá</a></button>
             </td>
             <td style="width: 33.33%;">
                 <img src="https://raw.githubusercontent.com/WeArePlanta/natura-mailing/main/img/img_3.png" alt="">
